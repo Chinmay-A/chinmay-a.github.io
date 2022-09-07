@@ -42,7 +42,7 @@ body {
 }
 
 a :hover {
-   transform: scale(1.1);
+    opacity: 100%;
 }
 
 .summary {
