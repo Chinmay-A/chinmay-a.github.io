@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./counter.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./counterb.css">
+    <link rel="stylesheet" href="./scroll-to-top.css">
+    <link rel="stylesheet" href="./scroll-down.css">
 
     <!--counter imports-->
     <!-- 
@@ -45,7 +47,7 @@
     
 </head>
 <body>
-    <div class="ca-container" id="ca-cont-id">
+    <div class="ca-container" id="ca-cont-id" style="position: relative;">
         <div class="ca-outer">
             <div class="ca-details">
                 <div id="ca-nav-div">
@@ -76,9 +78,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- Scroll Down -->
+
+        <a href="#ca-text-div-main" class="ra-sd">
+            <div class="ra-arrow-down"></div>
+        </a>
+
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
     
 
     <div id="ca-text-div-main">
@@ -331,7 +340,7 @@
     <br>
     <br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="contact">
+    <div class="contact" style="position: relative;">
         <h1 class="c_h1"> Get In Touch </h1>
         <div class="f jc-sa">
         <div class="left">
@@ -374,6 +383,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Scroll To Top  -->
+
+    <div class="ra-stt" onclick="scrollToTop()">
+        <span class="ra-arrow-to-top"></span>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- **** -->
 
     <!--<div class="icons">
         <img class="icn" src="./attributes/Screenshot_2022-09-03_130727-removebg-preview (1).png">
