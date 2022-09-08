@@ -16,8 +16,9 @@ body {
 }
 
 .img {
+    animation: slideUp 1.5s;
     transition: all 0.25s ease-in;
-    opacity: 70%;
+    opacity: 100%;
     padding-left: 40px;
     width: 300px;
     height: 330px;
@@ -30,10 +31,11 @@ body {
 
 .container2 {
     margin: 120px auto 40px auto;
-    width: 60%;
+    width: 50%;
 }
 
 .img2 {
+    animation: slideUp 1.5s;
     transition: all 0.25s ease-in;
     opacity: 70%;   
     width: 300px;
@@ -100,4 +102,14 @@ a :hover {
 }
 .bar :hover{
     width: 200%;
+}
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
