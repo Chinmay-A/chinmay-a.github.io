@@ -4,6 +4,7 @@
 }
 
 .ra-main-block {
+    background-color: #e6e6e6;
     width: 100%;
     overflow: hidden;
 }
@@ -14,7 +15,7 @@
 
 .ra-content {
     background-color: rgb(189 189 189 / 70%);
-    width: 60%;
+    width: 67%;
     margin: 100px auto 40px auto;
     border-radius: 20px;
     position: relative;
@@ -36,7 +37,7 @@
 
 .ra-carousel-container q {
     color: white;
-    font-size: 8em;
+    font-size: 5em;
     line-height: 20px;
     padding: 0 40px 0 40px;
 }
