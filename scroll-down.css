@@ -1,0 +1,32 @@
+.ra-sd{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+.ra-sd a{
+    text-decoration: none;
+}
+
+.ra-arrow-down{
+    display: inline-block;
+    height: 3.5rem;
+    width: 3.5rem;
+    background-color: white;
+    background-image: url('./images/icon-arrow-down.svg');
+    background-position: center center;   
+    background-repeat: no-repeat;
+    background-size: 10px 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 3px white;
+    z-index: 99999 !important;
+}
+
+.ra-arrow-down:hover{
+    filter: invert(1);
+}

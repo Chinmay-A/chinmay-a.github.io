@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="./counterb.css">
     <link rel="stylesheet" href="./try-css-a.css">
 
+    <link rel="stylesheet" href="./scroll-to-top.css">
+    <link rel="stylesheet" href="./scroll-down.css">
+
+
     <!--counter imports-->
     <!-- 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +53,7 @@
 </head>
 
 <body>
-    <div class="ca-container" id="ca-cont-id">
+    <div class="ca-container" id="ca-cont-id" style="position: relative;">
         <div class="ca-outer">
             <div class="ca-details">
                 <div id="ca-nav-div">
@@ -82,9 +86,18 @@
                 </div>
             </div>
         </div>
+
+        <!-- Scroll Down -->
+
+        <a href="#ca-text-div-main" class="ra-sd">
+            <div class="ra-arrow-down"></div>
+        </a>
+
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
 
 
     <div id="ca-text-div-main" style="margin-top: 13rem;" data-aos="slide-up">
@@ -370,7 +383,7 @@
     <br>
     <br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <div class="contact">
+    <div class="contact" style="position: relative;">
         <h1 class="c_h1"> Get In Touch </h1>
         <div class="f jc-sa">
         <div class="left">
@@ -414,7 +427,22 @@
         </div>
     </div>
 
-    <div class="icons">
+
+    <!-- Scroll To Top  -->
+
+    <div class="ra-stt" onclick="scrollToTop()">
+        <span class="ra-arrow-to-top"></span>
+    </div>
+
+    <script>
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- **** -->
+
+    <!--<div class="icons">
         <img class="icn" src="./attributes/Screenshot_2022-09-03_130727-removebg-preview (1).png">
         <img class="icn" src="./attributes/Screenshot_2022-09-03_165002-removebg-preview (1).png">
         <img class="icn" src="./attributes/Screenshot_2022-09-03_165033-removebg-preview.png">
