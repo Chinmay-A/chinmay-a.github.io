@@ -129,17 +129,18 @@ html{
 }
 
 #ca-make-bg-rgb-239{
-    background-color: rgb(239, 239, 239);
+    background-color: #e6e6e6;
 }
 
-#ca-text-div-main{
+#ca-text-div-main{  
     font-family: 'Lexend Deca', sans-serif;
-    padding-right: 3vh;
-    padding-left: 3vh;
+    padding-right: 17vh;
+    padding-left: 17vh;
     font-size: medium;
     line-height: 5vh;
     background-color: white !important;
     padding-top: 7vh;
+    text-align: justify;
 }
 
 .ca-text-color-chng{
@@ -148,16 +149,30 @@ html{
 
 #ca-border-box{
     border: solid;
-    padding-right: 1vh;
-    padding-left: 1vh;
+    padding-right: 17vh;
+    padding-left: 17vh;
     padding-bottom: 2vh;
     padding-top: 2vh;
     border-color: #169d6c;
     border-radius: 9px;
-    border-width: 0.753vh;
+    border-width: 0.553vh;
+    text-align: justify;
 }
 
 #ca-foot-contribution{
     font-family: 'Lexend Deca', sans-serif;
     color: white;
+}
+
+#ca-make-bg-rgb{
+    background-color: #e6e6e6;
+}
+
+body{
+    background-color: #e6e6e6 ;
+}
+
+#ca-make-change{
+    padding-top: 7vh;
+    background-color: white !important;
 }
