@@ -48,11 +48,33 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!--favicon over-->
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById("loadWrapper").style.display = "none";
+                document.getElementById("content").style.display = 'block';
+                document.getElementById("content").style.animation = 'transition 0.75s';
 
+            }, 2000)
+
+        }
+    </script>
+
+<link rel="stylesheet" href="./home_load_style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 
 </head>
 
 <body>
+    
+    <!---->
+    <div class="loadWrapper" id="loadWrapper">
+        <div class="loader"><img src="android-chrome-192x192.png" alt=""></div>
+    </div>
+    
+    <!---->
+    
+    
     <div class="ca-container" id="ca-cont-id" style="position: relative;">
         <div class="ca-outer">
             <div class="ca-details">
